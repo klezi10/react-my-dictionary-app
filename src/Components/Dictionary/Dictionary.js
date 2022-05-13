@@ -30,11 +30,11 @@ export default function Dictionary(props) {
             <Card className={classes.Dictionary} >
                 <form className="Dictionary" onSubmit={handleSubmit}>
                     <label htmlFor="word-lookup">What word do you want to look up?</label>
-                    <input id="word-lookup" value={word} type="text" autoComplete="off" onChange={handleInput} ></input>
+                    <input id="word-lookup" value={word} type="text" autoComplete="off" onChange={handleInput} autoFocus='on' ></input>
                 </form>
                 <small className="hint">example: wine, chocolate, coding, beach</small>
             </Card>
-            <Results results={results} />
+            {word && <Results results={results} />}
         </Fragment>
     )
 }
