@@ -32,6 +32,7 @@ export default function Dictionary(props) {
                     <label htmlFor="word-lookup">What word do you want to look up?</label>
                     <input id="word-lookup" value={word} type="text" autoComplete="off" onChange={handleInput} ></input>
                 </form>
+                <small className="hint">example: wine, chocolate, coding, beach</small>
             </Card>
             <Results results={results} />
         </Fragment>

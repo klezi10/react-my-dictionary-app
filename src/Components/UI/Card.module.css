@@ -1,9 +1,15 @@
 .card {
-    background: white;
+    background: rgb(241, 238, 238);
     box-shadow:  0 2px 8px rgba(0, 0, 0, 0.26);
     border-radius: 10px;
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 450px;
+    margin: 20px auto;
     padding: 40px;
     display: block;
+}
+
+@media (min-width: 600px) {
+    .card {
+        max-width: 960px;
+    }
 }
