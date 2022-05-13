@@ -1,0 +1,13 @@
+.Dictionary {
+    margin-top: 50px;
+}
+
+.Dictionary input {
+    display: block;
+    width: 90%;
+}
+
+.Dictionary label {
+    width: 90%;
+    display: block;
+}
