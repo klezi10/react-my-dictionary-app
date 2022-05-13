@@ -10,7 +10,7 @@ export default function Results(props) {
 
     return (
         <Card className={classes.Results}>
-            <h2>{props.results.word}</h2>
+            <h1>{props.results.word}</h1>
            <h3>{props.results.partOfSpeech}</h3>
            <p>{props.results.definitions}</p>
         </Card>
