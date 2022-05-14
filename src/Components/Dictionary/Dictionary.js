@@ -3,10 +3,12 @@ import Card from "../UI/Card"
 import classes from "../Dictionary/Dictionary.module.css"
 import Results from "./Results"
 import axios from 'axios'
+// import Photos from "./Photos"
 
 export default function Dictionary(props) {
     const [word, setWord] = useState(props.defaultWord)
     const [results, setResults] = useState({ ready: false })
+    const [photos, setPhotos] = useState({})
 
     function handleSubmit(event) {
         event.preventDefault()
@@ -20,10 +22,25 @@ export default function Dictionary(props) {
             phonetics: response.data[0].phonetics,
             meanings: response.data[0].meanings
         })
+        callPhotos()
     }
 
     function search() {
         axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`).then(handleResponse)
+    }
+
+    function callPhotos() {
+        axios.get(`https://api.pexels.com/v1/search?query=${word}&per_page=9`, {
+            headers: {
+                Authorization: "563492ad6f9170000100000129b7e51f759e42fda9eb92a0f1497aaf"
+            },
+            method: "GET"
+        }).then(handlePhotoResponse)
+    }
+
+    function handlePhotoResponse(response) {
+        console.log(response.data.photos[0])
+        setPhotos(response.data.photos[0])
     }
 
     function handleInput(event) {
@@ -40,7 +57,8 @@ export default function Dictionary(props) {
                     </form>
                     <small className="hint">example: wine, chocolate, coding, beach</small>
                 </Card>
-                <Results results={results} />
+                <Results results={results} photos={photos} />
+                {/* <Photos photos={photos}/> */}
             </Fragment >
             :
             search()
