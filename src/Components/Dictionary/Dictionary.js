@@ -14,7 +14,6 @@ export default function Dictionary(props) {
     }
 
     function handleResponse(response) {
-        // console.log(response)
         setResults({
             ready: true,
             word: response.data[0].word,

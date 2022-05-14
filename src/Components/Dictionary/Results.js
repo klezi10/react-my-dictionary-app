@@ -5,7 +5,6 @@ import Meanings from "./Meanings"
 import Phonetic from "./Phonetic"
 
 export default function Results(props) {
-    console.log(props.results.meanings)
     return (
         <Fragment>
             <Card className={classes.Results}>
