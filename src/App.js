@@ -6,7 +6,7 @@ export default function App() {
 
     return (
         <Fragment>
-            <Dictionary />
+            <Dictionary defaultWord='wine' />
             <footer>Coded by me</footer>
         </Fragment>
     )
