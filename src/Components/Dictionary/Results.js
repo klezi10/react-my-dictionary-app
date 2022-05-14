@@ -11,13 +11,19 @@ export default function Results(props) {
                 <h1>{props.results.word}</h1>
 
                 {props.results.phonetics.map(phonetic => {
-                    return <Phonetic phonetic={phonetic} key={Math.random().toString()} />
+                    return <Phonetic
+                        phonetic={phonetic}
+                        key={Math.random().toString()}
+                    />
                 })}
 
             </Card>
             {props.results.meanings.map(meaning => {
                 return (
-                    <Meanings meaning={meaning} key={Math.random().toString()} />
+                    <Meanings
+                        meaning={meaning}
+                        key={Math.random().toString()}
+                    />
                 )
             })}
         </Fragment>

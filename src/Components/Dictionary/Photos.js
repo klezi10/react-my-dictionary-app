@@ -3,25 +3,21 @@ import React from "react"
 import Card from "../UI/Card"
 
 export default function Photos(props) {
-    console.log(props.photos.url)
+    console.log(props.photos)
 
     if (props.photos) {
         return (
             <Card>
                 <div className="Photos">
-                    {/* {props.photos.map(function (photo, index) {
-                        return <img src={photo.src.landscape} key={index} />
-                    })} */}
-
-
-
-
-                    <p>Photos go here</p>
-                <a href={props.photos.url} target="_blank" rel="noopener noreferrer">
-                    <img src={props.photos.url} alt={props.photos.alt} />
-                </a>
+                    {props.photos.map(photo => {
+                        return (
+                            <a key={Math.random().toString()} href={photo.url} target="_blank" rel="noopener noreferrer">
+                                <img src={photo.src.small} alt={photo.alt} 
+                                />
+                            </a>
+                        )
+                    })}
                 </div>
-
             </Card>
         )
     } else {
