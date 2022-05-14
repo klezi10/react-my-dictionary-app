@@ -1,0 +1,20 @@
+.Photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.Photos img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+@media (min-width: 600px) {
+    .Photos {
+        grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    }
+}

@@ -1,5 +1,5 @@
 import React from "react"
-// import classes from "./Photos.module.css"
+import "./Photos.css"
 import Card from "../UI/Card"
 
 export default function Photos(props) {
@@ -11,7 +11,7 @@ export default function Photos(props) {
                     {props.photos.map(photo => {
                         return (
                             <a key={Math.random().toString()} href={photo.url} target="_blank" rel="noopener noreferrer">
-                                <img src={photo.src.small} alt={photo.alt} 
+                                <img src={photo.src.landscape} alt={photo.alt} 
                                 />
                             </a>
                         )
