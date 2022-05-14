@@ -8,7 +8,7 @@ import Photos from "./Photos"
 export default function Dictionary(props) {
     const [word, setWord] = useState(props.defaultWord)
     const [results, setResults] = useState({ ready: false })
-    const [photos, setPhotos] = useState(null)
+    const [photos, setPhotos] = useState('')
 
     function handleSubmit(event) {
         event.preventDefault()
@@ -16,7 +16,6 @@ export default function Dictionary(props) {
     }
 
     function handleResponse(response) {
-        console.log(response.data)
         setResults({
             ready: true,
             word: response.data[0].word,
@@ -36,7 +35,6 @@ export default function Dictionary(props) {
     }
 
     function handlePhotoResponse(response) {
-        console.log(response.data.photos)
         setPhotos(response.data.photos)
     }
 
