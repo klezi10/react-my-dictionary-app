@@ -57,7 +57,7 @@ export default function Dictionary(props) {
                             autoFocus='on'
                         ></input>
                     </form>
-                    <small className="hint">example: wine, chocolate, coding, beach</small>
+                    <small className="hint">example: sunset, travel, pilates, hiking...</small>
                 </Card>
                 <Results results={results} />
                 <Photos photos={photos} />
