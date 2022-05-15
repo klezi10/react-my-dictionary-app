@@ -4,7 +4,7 @@
     line-height: 30px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 675px) {
     .Results h2 {
         font-size: 36px;
         line-height: 43px;

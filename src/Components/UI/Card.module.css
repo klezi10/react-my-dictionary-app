@@ -2,14 +2,15 @@
     background: #FCFFE7;
     box-shadow:  0 2px 8px rgba(0, 0, 0, 0.26);
     border-radius: 10px;
-    max-width: 450px;
+    max-width: 350px;
     margin: 20px auto;
-    padding: 40px;
+    padding: 20px;
     display: block;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 675px) {
     .card {
         max-width: 850px;
+        padding: 40px;
     }
 }

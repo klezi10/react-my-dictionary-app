@@ -1,7 +1,11 @@
-import React from "react"
+import React, { Fragment } from "react"
+import "./Header.css"
 
 export default function Header() {
     return (
-        <h1>Header</h1>
+        <Fragment>
+            <h1 className="Header">Digital Dictionary</h1>
+        </Fragment>
+
     )
 }
