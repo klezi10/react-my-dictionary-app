@@ -8,7 +8,7 @@ export default function App() {
             <Header />
             <Dictionary defaultWord='wine' />
             <footer>Coded by Klesta | <a
-                href="https://peppy-lily-de3cbc.netlify.app/"
+                href="https://github.com/klezi10/react-my-dictionary-app"
                 target="_blank"
                 rel="noopener noreferrer"
             >Open-source</a> </footer>
