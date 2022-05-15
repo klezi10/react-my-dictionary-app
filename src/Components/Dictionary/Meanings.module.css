@@ -1,4 +1,4 @@
-.Meanings h3 {
+.Meanings h4 {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -6,12 +6,8 @@
     color: #000;
 }
 
-.Meanings h4 {
-    color: darkblue;
-}
-
 @media (min-width: 600px) {
-    .Meanings h3 {
+    .Meanings h4 {
         font-size: 24px;
         line-height: 29px;
     }

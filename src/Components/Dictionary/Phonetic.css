@@ -4,34 +4,35 @@
 
 .Phonetic a {
     text-decoration: none;
-    border: 1px solid darkblue;
+    border: 1px solid #DEA057;
     display: inline-block;
-    padding: 0.4rem 0.8rem;
-    font-weight: 400;
+    padding: 0.4rem 1rem;
+    font-weight: 700;
     margin-right: 15px;
     font-size: 14px;
     line-height: 17px;
     border-radius: 50px;
-    color: darkblue;
+    color: #DEA057;
 }
 
 .Phonetic a:hover,
 .Phonetic a:focus {
     color: white;
-    background-color: darkblue;
-    border-color: whitesmoke;
+    background-color: #DEA057;
+    border-color: transparent;
 }
 
-.Phonetic h2 {
+.Phonetic h3 {
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
     color: #666;
     display: inline;
+    opacity: 0.7;
 }
 
 @media (min-width: 600px) {
-    .Phonetic h2 {
+    .Phonetic h3 {
         font-size: 16px;
     }
 }

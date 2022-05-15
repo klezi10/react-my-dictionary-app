@@ -8,7 +8,7 @@ export default function Results(props) {
     return (
         <Fragment>
             <Card className={classes.Results}>
-                <h1>{props.results.word}</h1>
+                <h2>{props.results.word}</h2>
 
                 {props.results.phonetics.map(phonetic => {
                     return <Phonetic

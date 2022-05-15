@@ -7,7 +7,6 @@ export default function Meanings(props) {
     return (
         <Card className={classes.Meanings}>
             <h3>{props.meaning.partOfSpeech}</h3>
-            <h4>Definitions:</h4>
                 <Definitions definition={props.meaning.definitions} />
         </Card>
     )

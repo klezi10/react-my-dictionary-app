@@ -15,6 +15,6 @@
 @media (min-width: 600px) {
     .Photos {
         grid-column-gap: 20px;
-    grid-row-gap: 20px;
+        grid-row-gap: 20px;
     }
 }

@@ -1,11 +1,11 @@
-.Results h1 {
+.Results h2 {
     font-weight: 700;
     font-size: 28px;
     line-height: 30px;
 }
 
 @media (min-width: 600px) {
-    .Results h1 {
+    .Results h2 {
         font-size: 36px;
         line-height: 43px;
     }
