@@ -24,6 +24,10 @@ export default function Dictionary(props) {
         })
     }
 
+    function handlePhotoResponse(response) {
+        setPhotos(response.data.photos)
+    }
+
     function search() {
         axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`).then(handleResponse)
         
@@ -32,10 +36,6 @@ export default function Dictionary(props) {
                 Authorization: "563492ad6f9170000100000129b7e51f759e42fda9eb92a0f1497aaf"
             }
         }).then(handlePhotoResponse)
-    }
-
-    function handlePhotoResponse(response) {
-        setPhotos(response.data.photos)
     }
 
     function handleInput(event) {
