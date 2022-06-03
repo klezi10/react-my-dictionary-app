@@ -37,12 +37,12 @@ Users should be able to:
 
 ### Built with
 
-- React
+- Reactjs
 - API Integration - 2 different APIs - Dictionary API (https://dictionaryapi.dev/) and Pexels photo API (https://www.pexels.com/api/)
 - HTML
-- CSS
+- CSS properties
 - CSS Grid
-- Mobile-first workflow
+- Mobile-first responsive workflow
 
 ### What I learned
 
