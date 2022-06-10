@@ -54,4 +54,4 @@ I would like to add validation like what happens if a user submits an empty form
 
 ## Author
 
-- Portfolio (https://clever-turing-3f9e94.netlify.app/)
+- Portfolio (https://www.klesdev.com/)
