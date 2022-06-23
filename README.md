@@ -37,16 +37,18 @@ Users should be able to:
 
 ### Built with
 
-- Reactjs
+- React
 - API Integration - 2 different APIs - Dictionary API (https://dictionaryapi.dev/) and Pexels photo API (https://www.pexels.com/api/)
 - HTML
 - CSS properties
 - CSS Grid
+- CSS Modules
+- Reusable Components
 - Mobile-first responsive workflow
 
 ### What I learned
 
-I practiced React forms, using state and the map function multiple times. I practiced how to work with two APIs.
+I practiced React forms, using state and the map function multiple times. I practiced how to work with two APIs. I practiced incorporating a reusable card component.
 
 ### Continued development
 
