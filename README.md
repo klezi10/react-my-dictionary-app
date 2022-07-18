@@ -12,6 +12,7 @@ A Dictionary app coded in React with API integration.
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
+- [Installation](#installation)
 - [Author](#author)
 
 ## Overview
@@ -52,7 +53,24 @@ I practiced React forms, using state and the map function multiple times. I prac
 
 ### Continued development
 
-I would like to add validation like what happens if a user submits an empty form.
+I would like to add validation like what happens if a user submits an empty form or a word not found in the dictionary API.
+
+## Installation
+
+- Fork this repo and then clone your fork to an empty local directory using SSH or HTTPS
+- Run:
+
+```ssh
+npm install
+```
+
+- The project can be viewed by running:
+
+```ssh
+npm start
+```
+
+- Open `localhost:3000` in your browser.
 
 ## Author
 
