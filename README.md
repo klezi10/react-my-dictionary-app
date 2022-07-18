@@ -38,12 +38,10 @@ Users should be able to:
 
 ### Built with
 
-- React
-- API Integration - 2 different APIs - Dictionary API (https://dictionaryapi.dev/) and Pexels photo API (https://www.pexels.com/api/)
+- React (state management)
+- Axios API Integration - 2 different APIs - Dictionary API (https://dictionaryapi.dev/) and Pexels photo API (https://www.pexels.com/api/)
 - HTML
-- CSS properties
-- CSS Grid
-- CSS Modules
+- CSS properties, CSS Grid, CSS Module
 - Reusable Components
 - Mobile-first responsive workflow
 
