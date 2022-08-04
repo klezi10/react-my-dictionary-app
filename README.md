@@ -47,6 +47,8 @@ Users should be able to:
 
 ### What I learned
 
+- Update: Learned to hide API keys through `.env` files.
+
 - I practiced React forms, using state and the map function multiple times. I practiced how to work with two APIs. I practiced incorporating a reusable card component.
 
 ### Continued development
