@@ -30,14 +30,14 @@ export default function Dictionary(props) {
 
   function search() {
     axios
-      .get(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+      .get(`${process.env.REACT_APP_DICTIONARY}/${word}`)
       .then(handleResponse);
 
     axios
       .get(`https://api.pexels.com/v1/search?query=${word}&per_page=9`, {
         headers: {
           Authorization:
-            `563492ad6f9170000100000129b7e51f759e42fda9eb92a0f1497aaf`,
+            `${process.env.REACT_APP_PHOTOS}`,
         },
       })
       .then(handlePhotoResponse);
